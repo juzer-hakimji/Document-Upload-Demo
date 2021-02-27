@@ -1,0 +1,14 @@
+<div class="form-group">
+  <label for="name">Choose Documents <span class="color-red">(Upto 5 files and size should be less than 1 MB) :</span></label><br />
+  <input type="file" id="FileInput" class="form-control-file" #Docs (change)="handleFileInput($event)" multiple="multiple">
+  <div class="color-red" *ngIf="Docs.files.length < 1 || Docs.files.length > 5">Please Add at least 1 documents and maximum 5</div>
+</div>
+<button type="button" (click)="onSubmit()">Upload</button>
+
+<div>
+  <ul>
+    <li *ngFor="let doc of DocListToShow">
+      <a href="api/Document/DownloadDocument/{{ doc.DocumentId }}">{{ doc.DocumentName }}</a>
+    </li>
+  </ul>
+</div>
