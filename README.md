@@ -3,4 +3,4 @@ This Repository shows you how to upload files from angular to SQL Server using D
 
 For further details please visit https://juzerhakimji.in/uploading-files-from-angular-to-dotnet-core-webapi-and-sql-server/
 
-Also please check out this <a href="https://www.bidathlete.com">player auction software</a> for players participating in sports tournaments and also share with others Thanks.
+The same code is used in this <a href="https://www.bidathlete.com">player auction software</a> for players participating in sports tournaments. Please also share with others Thanks.
